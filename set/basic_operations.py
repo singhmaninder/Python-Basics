@@ -33,6 +33,7 @@ countries.discard('Pakistan')
 
 print("\nUnion of new_countries and countries is: {}".format(new_countries | countries))
 print("Intersection of new_countries and countries is: {}".format(new_countries & countries))
+print("Disjoint of new_countries and countries is: {}".format(new_countries.isdisjoint(countries)))
 
 # Clear a set.
 countries.clear()
