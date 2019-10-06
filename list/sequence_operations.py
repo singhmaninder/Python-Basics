@@ -32,8 +32,10 @@ print("Employee list from start to end is {}.".format(emplist[:]))
 # The default value of step size is 1.
 
 print("\nEmployee list with step size 1 is {}.".format(emplist[::1]))
-print("Employee list with step size 2 is {}.".format(emplist[::2])) # When step size is 2, we get the items with position 0, 2, ..
-print("Employee list with step size 3 is {}.".format(emplist[::3])) # When step size is 3, we get the items with position 0, 3, ..
-print("Employee list with step size 4 is {}.".format(emplist[::4])) # When step size is 4, we get the items with position 0, 4, ..
-print("Employee list with step size 5 is {}.".format(emplist[::5])) # When step size is 5, we get the items with position 0, 5, ..
+print("Employee list with step size 2 is {}.".format(emplist[::2])) # When step size is 2, we get the items with position 0, 2,..
+print("Employee list with step size 3 is {}.".format(emplist[::3])) # When step size is 3, we get the items with position 0, 3,..
+print("Employee list with step size 4 is {}.".format(emplist[::4])) # When step size is 4, we get the items with position 0, 4,..
+print("Employee list with step size 5 is {}.".format(emplist[::5])) # When step size is 5, we get the items with position 0, 5,..
 print("Employee list with step size -1 is {}.".format(emplist[::-1])) # When step size is -1, we get the reverse list.
+print("Employee list with step size -2 is {}.".format(emplist[::-2])) # When step size is -2, we get the items with position -1, -3, -5,...
+print("Employee list with step size -3 is {}.".format(emplist[::-3])) # When step size is -3, we get the items with position -1, -4, -7,...
