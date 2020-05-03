@@ -51,3 +51,17 @@ class CreditCard:
     def make_payment(self, amount):
         """Process customer payment that reduces balance."""
         self._balance -= amount
+
+if __name__ == '__main__':
+    my_card = CreditCard('Maninder Singh', 'HDFC BANK', '9810 1234', 100000)
+
+    assert my_card.get_customer() == 'Maninder Singh'
+    assert my_card.get_bank() == 'HDFC BANK'
+    assert my_card.get_account() == '9810 1234'
+    assert my_card.get_limit() == 100000
+    assert my_card.get_balance() == 0
+    my_card.charge(5000)
+    assert my_card.get_balance() == 5000
+    my_card.make_payment(800)
+    assert my_card.get_balance() == 4200
+    assert my_card.charge(200000) == False
