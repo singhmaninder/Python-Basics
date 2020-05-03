@@ -64,4 +64,6 @@ if __name__ == '__main__':
     assert my_card.get_balance() == 5000
     my_card.make_payment(800)
     assert my_card.get_balance() == 4200
-    assert my_card.charge(200000) == False
+    assert my_card.charge(200000) == False   # if charge amount exceeds the limit then charge
+                                             # won't be proccessed successfully.
+    assert my_card.get_balance() == 4200
